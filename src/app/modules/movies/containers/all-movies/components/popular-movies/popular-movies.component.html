@@ -1,0 +1,13 @@
+<ng-container *ngIf="$popularMovies | async">
+    <h1>Popular Movies</h1>
+
+    <section>
+        <div class="popular_movie" *ngFor="let movie of $popularMovies | async">
+            <img src="{{ movie.poster_path }}" alt="{{ movie.title }}" />
+            <h1>{{ movie.title }}</h1>
+            <div class="popular_movie__categoryMovie" [class.adultMovie]="movie.adult">
+                {{ movie.adult | category }}
+            </div>
+        </div>
+    </section>
+</ng-container>

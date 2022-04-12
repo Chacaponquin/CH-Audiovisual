@@ -1,0 +1,36 @@
+@use "../../../../../../shared/sass/variables";
+:host {
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    display: flex;
+    padding-top: 1rem;
+    overflow-x: scroll;
+    height: max-content;
+    .popular_movie {
+        margin-right: 2rem;
+        width: max-content;
+        height: 100%;
+        img {
+            border-radius: 10px;
+        }
+        h1 {
+            font-size: 1.2rem;
+            padding: 0.6rem;
+        }
+        &__categoryMovie {
+            width: 100%;
+            background-color: variables.$allPublicColor;
+            border-radius: 10px;
+            padding: 1rem 0;
+            text-align: center;
+            color: white;
+            font-weight: 900;
+        }
+        .adultMovie {
+            background-color: variables.$adultColor;
+        }
+    }
+}

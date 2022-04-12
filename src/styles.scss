@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+
+@font-face {
+    font-family: "FiraCode";
+    src: url("../src/assets/Font/FiraCode-VariableFont_wght.ttf");
+}
+
+* {
+    margin: 0;
+    font-family: FiraCode;
+    padding: 0;
+    box-sizing: border-box;
+}

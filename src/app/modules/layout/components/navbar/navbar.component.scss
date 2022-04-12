@@ -1,0 +1,27 @@
+@use "../../../../shared/sass/variables";
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: variables.$primary-color;
+    padding: 1rem 0;
+    &__options {
+        display: flex;
+        align-items: center;
+        a {
+            margin: 0 0.3rem;
+            color: white;
+            transition: all ease 0.4s;
+            cursor: pointer;
+            font-size: 1.2rem;
+            border-radius: 15px;
+            text-decoration: none;
+            padding: 1rem 3rem;
+        }
+    }
+    .route-active {
+        background-color: white;
+        color: black;
+    }
+}

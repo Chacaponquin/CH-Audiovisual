@@ -1,0 +1,14 @@
+<ng-container *ngIf="$latestMovies">
+    <div class="latestMovies_header">
+        <h1>Latest Movies</h1>
+
+        <section>{{ $latestMovies.dates.minimum | date }}</section>
+    </div>
+
+    <section class="latestMovies">
+        <div class="latestMovies__movie" *ngFor="let movie of $latestMovies.results">
+            <img src="{{ movie.poster_path }}" alt="{{ movie.title }}" />
+            <h1>{{ movie.title }}</h1>
+        </div>
+    </section>
+</ng-container>
